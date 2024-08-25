@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Portfolio</title>
+    <link rel = "stylesheet" href = "Styles.css">
+    <link rel = "stylesheet" href = "portfolioStyle.css">
+    <link rel="icon" type="image/PNG" href="logo.PNG">
+    <meta name = "viewpoint" content="width = device-width, intial-scale =1">
+    <div class = content>
+        <h1>ARTWORK</h1>
+        <p  style="font-size: 22px;">CLICK PLAY FOR AUDIO EXPERIENCE</p>
+        <img id="iconPointer" src="play.png" >
+    </div>
+
+    <!--Audio-->
+
+<audio id="mySong">
+    <source src="ClassicalSong.mp3" type="audio/mp3">
+</audio>
+
+<script>
+var mySong = document.getElementById("mySong");
+var iconPointer = document.getElementById("iconPointer");
+
+iconPointer.onclick = function(){
+ if(mySong.paused){
+    mySong.play();
+    iconPointer.src = "pause.png";
+ } else {
+    mySong.pause();
+    iconPointer.src = "play.png"; 
+ }
+}
+
+</script>
+
+
+    <!--End of audio-->
+</head>
+<body>
+    <section id = banner>
+        <img src="logo.PNG"  class = logo>
+    </section>
+
+    <div id="navbar">
+        <nav>
+            <ul>
+                <li><a href="Project.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="index.html">About Me</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+    
+    <div id = menuBtn>
+        <img src="logo.PNG" id = "menu">
+    </div>
+
+<!--Portfolio Sketches section 1-->
+ <section id="feature" style="background-color: rgb(54, 52, 52);">
+    <section id = banner>
+
+    <div class="feature-box">
+       <div class="features">
+           <h1 style="color: white;">Graphic design intro<h1>
+               <div class="feature-desc">
+                   <div class="feature-text">
+                   <p style="font-size:36px;">This is a short video I made by drawing every frame individually to showcase my animation skills</p>
+                   <br></br>
+                   </div>
+                   </div>
+       </div>
+       <div class="feature-video">
+       <div class="zoom">
+           <video src="animation.mp4" autoplay loop muted>  
+       </div>
+    </div>
+    </div>   
+</section>
+   </section>
+<!--End of portfolio Sketches section 1-->
+
+    <!--Portfolio Sketches section 2-->
+    <section id="feature" style="background-color: rgb(54, 52, 52);">
+        <section id = banner>
+      
+     <div class="feature-box">
+        <div class="features">
+            <h1 style="color: white;">Hand sketch<h1>
+                <div class="feature-desc">
+                    <div class="feature-text">
+                    <p style="font-size:36px;">Here I used various techniques to help with the proportions and the shape of the hand, I then used darker lines on the knuckles and joints when doing the dingers to emphasise how they bend</p>
+                    <br></br>    
+                </div>
+                    </div>
+        </div>
+        <div class="feature-img">
+            <div class="zoom">
+            <img src="hand sketch.jpg">  
+        </div>
+        </div>
+     </div>   
+  </section>
+    </section>
+<!--End of portfolio Sketches section 2-->
+
+ <!--Portfolio Sketches section 3-->
+ <section id="feature" style="background-color: rgb(54, 52, 52);">
+    <section id = banner>
+    
+    <div class="feature-box">
+       <div class="features">
+           <h1 style="color: white;">Art sketch<h1>
+               <div class="feature-desc">
+                   <div class="feature-text">
+                   <p style="font-size:36px;">I started by outlining the jar and tools to give them a basic shape so I wcould use expressive strokes to emphasiuse the texture of the metal and glass. to finish it off I added crosshatching and a few smudges.</p>
+                   <br></br>  
+                </div>
+                   </div>
+       </div>
+       <div class="feature-img">
+        <div class="zoom">
+           <img src="art sketch.jpg">  
+       </div>
+       
+    </div>   
+</section>
+   </section>
+<!--End of portfolio Sketches section 3-->
+
+ <!--Portfolio Sketches section 4-->
+ <section id="feature" style="background-color: rgb(54, 52, 52);">
+    <section id = banner>
+   
+    <div class="feature-box">
+       <div class="features">
+           <h1 style="color: white";>Building sketch<h1>
+               <div class="feature-desc">
+                   <div class="feature-text">
+                   <p style="font-size:36px;">The building I have tried to pay close attention to the symmetryt of the arches and columns when outlining the structure. I had to use precise lines to give the architecture of the building a sense of grandeur. To finish it off I used rough lines for the rocky surroundings.</p>
+                   <br></br>   
+                </div>
+                   </div>
+       </div>
+       <div class="feature-img">
+        <div class="zoom">
+           <img src="building sketch.jpg">  
+       </div>
+        </section>
+    </div>   
+
+   </section>
+<!--End of portfolio Sketches section 4-->
+
+ <!--Portfolio Sketches section 5-->
+ <section id="feature" style="background-color: rgb(54, 52, 52);">
+    <section id = banner>
+  
+    <div class="feature-box">
+       <div class="features">
+           <h1 style="color: white";>Portrait sketch<h1>
+               <div class="feature-desc">
+                   <div class="feature-text">
+                   <p style="font-size:36px;">Here I used my strength in portraits to focus on the eyes to capture emotion and expression as I wanted to add fabric covering her face with the aid of loose flowing lines. To create depth and texture I implemented crosshatching and I used darker lines around the eyes to give them more detail to make them the focal point</p>
+                   <br></br>   
+                </div>
+                   </div>
+       </div>
+       <div class="feature-img">
+        <div class="zoom">
+           <img src="woman sketch.jpg">  
+       </div>
+    </div>
+    </div>   
+  </section>
+   </section>
+<!--End of portfolio Sketches section 5-->
+<section id = banner>
+</section>
+ 
+    <script>
+        var menuBtn = document.getElementById("menuBtn")
+        var navbar = document.getElementById("navbar")
+        var menu = document.getElementById("menu")
+
+        navbar.style.right = "-250px"
+        menuBtn.onclick = function()
+        {
+            if(navbar.style.right == "-250px"){
+                navbar.style.right = "0px";
+            }
+            else{
+                navbar.style.right = "-250px";
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel = "stylesheet" href = "contactStyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/PNG" href="logo.PNG">
+</head>
+<body>
+    
+    <section class = contact>
+        <div class = content>
+            <h2>CONTACT ME</h2>
+            <p>If you have any inquiries about work, commisions or other related news feels free to leave a message below.</p>
+        </div>
+
+        <div class = "container">
+
+            <div class = "contactInfo">
+                <div class = "box">
+                    <div class = "icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class = "text">
+                        <h3>Address</h3>
+                        <p>123 Main Street<br>Die Boord, Stellenbosch<br>6070</p>
+                    </div>
+                </div>
+                <div class = "box">
+                    <div class = "icon">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                    </div>
+                    <div class = "text">
+                        <h3>Phone</h3>
+                        <p>(041)-987-7654</p>
+                    </div>
+                </div>
+                <div class = "box">
+                    <div class = "icon">
+                        <i class="fa-regular fa-envelope"></i>
+                    </div>
+                    <div class = "text">
+                        <h3>Email</h3>
+                        <p>maryjane@drawingablank.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "contactForm">
+                <form >
+                    <h2>Send message</h2>
+                    <div class = "inputBox">
+                        <input type = "text" name = "name" required = "required">
+                        <span>Full Name</span>
+                    </div>
+                    <div class = "inputBox">
+                        <input type = "email" name = "email" required = "required">
+                        <span>Email</span>
+                    </div>
+                    <div class = "inputBox">
+                        <input type = "text" name = "message" required = "required">
+                        <span>Type your message...</span>
+                    </div>
+                    <div class = "inputBox">
+                        <input type = "submit" name= "submitBtn" value = "Send">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div id="navbar">
+            <nav>
+                <ul>
+                    <li><a href="Project.html">Home</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="index.html">About Me</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div id = menuBtn>
+            <img src="logo.PNG" id = "menu">
+        </div>
+        <script>
+            var menuBtn = document.getElementById("menuBtn")
+            var navbar = document.getElementById("navbar")
+            var menu = document.getElementById("menu")
+    
+            navbar.style.right = "-250px"
+            menuBtn.onclick = function()
+            {
+                if(navbar.style.right == "-250px"){
+                    navbar.style.right = "0px";
+                }
+                else{
+                    navbar.style.right = "-250px";
+                }
+            }
+        </script>
+
+    </section>
+
+</body>
+</html>

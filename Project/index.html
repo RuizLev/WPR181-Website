@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AAbout me</title>
+   <link rel = "stylesheet" href = "Styles.css">
+   <link rel="icon" type="image/PNG" href="logo.PNG">
+   <link rel="stylesheet" href="AboutMe.css">
+   <meta name = "viewpoint" content="width = device-width, intial-scale =1">
+
+   
+</head>
+
+<body>
+    <section id = banner>
+        <img src="logo.PNG"  class = logo>
+        <div id="navbar">
+            <nav>
+                <ul>
+                    <li><a href="Project.html">Home</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="index.html">About Me</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div id = menuBtn>
+            <img src="logo.PNG" id = "menu">
+        </div>
+        <script>
+            var menuBtn = document.getElementById("menuBtn")
+            var navbar = document.getElementById("navbar")
+            var menu = document.getElementById("menu")
+    
+            navbar.style.right = "-250px"
+            menuBtn.onclick = function()
+            {
+                if(navbar.style.right == "-250px"){
+                    navbar.style.right = "0px";
+                }
+                else{
+                    navbar.style.right = "-250px";
+                }
+            }
+        </script>
+    
+  
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="IMG_4101.JPG"></div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    I'm an artist who finds inspiration in the interplay of light and shadow,
+                    translating fleeting moments into vibrant, evocative paintings.
+                    My work explores the beauty in everyday scenes, capturing the essence
+                    of ordinary life with a touch of the extraordinary.
+                    Each piece reflects my passion for color, texture, and storytelling,
+                    inviting viewers to see the world through my eyes.
+                </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Painting</span><br>Portrait Paintings</li>
+                        <li><span>Painting</span><br>Landscape Psintings</li>
+                        <li><span>Sketches</span><br>Abstract Art</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Experience">
+                    <ul>
+                        <li><span>2023 - current</span><br>Own Art studio</li>
+                        <li><span>2021 - 2022</span><br>Painter at Van Lisa studios</li>
+                        <li><span>2019 - 2021</span><br>Art Lecturer at Arts Academy</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>2019</span><br>All Paint training at Arts Academy China</li>
+                        <li><span>2019</span><br>MBA from Creative Academy China</li>
+                        <li><span>2015</span><br>BBA from ArtsTech China</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+</script>
+</section> 
+<section id = banner>
+    </section> 
+</body>
+
+</html>
